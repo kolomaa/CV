@@ -1,0 +1,236 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color:#242424;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user{
+    width: 40%;
+    background: #C0D8DE;
+    padding: 5%;
+    text-align: center;
+    position: relative;
+}
+
+.user__photo{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.user__photo{
+    animation: 1s linear 0s normal none running user__photo;
+    -webkit-animation: 1s linear 0s normal none running user__photo;
+}
+@keyframes user__photo{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes user__photo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.user__name{
+    margin-top: 25px;
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.user__profession{
+    font-weight: 600;
+    font-size: 20px;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.user__profile-text{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.user__profile{
+    margin-top: 25px;
+}
+
+.section__title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.line{
+    background-color: #828282;
+    height: 2px;
+    border: none;
+    margin: 30px 0;
+}
+
+.user__contact-title{
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.user__contact-text{
+    color:#4F4F4F;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.rate-point{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(36, 36, 36, 0.5);
+    border-radius: 50%;
+}
+
+.rate-point.checked{
+    background-color: #242424;
+}
+
+.user__skills-item-rate{
+    display: flex;
+    gap: 5px;
+}
+
+.user__skills-item{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.user__skills-list{
+    margin-top: 10px;
+}
+
+.user__skills-item-name{
+    font-weight: 500;
+}
+
+.about{
+    padding: 5%;
+    background-color: #E4E6E7;
+    width: 60%;
+    position: relative;
+}
+
+.education,
+.work-experiece{
+    text-align: center;
+}
+
+.section{
+margin-bottom: 35px;
+}
+
+.section__name{
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section__item-title{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.section__item-subtitle{
+    font-weight: 500;
+    color: #999999;
+}
+
+.section__item-text{
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.section__item{
+    margin: 20px 0;
+}
+
+.myprogress{
+    width: 100%;
+    background-color: #ddd;
+}
+
+#BarHTML,
+#BarCSS,
+#BarJS{
+    width: 0%;
+    height: 30px;
+    background-color: #999999;
+    text-align: center; 
+    line-height: 30px; 
+    color: white;
+}
+
+.close-button{
+    width: 35px;
+    height: 35px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+}
+
+.open-button{
+    width: 35px;
+    height: 35px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: none;
+}
+
+.close:hover img{
+    transform: scale(1.5);
+}
+
+@media screen and  (max-width: 975px) {
+    .user__name{
+        font-size: 20px;
+    }
+
+    .user,
+    .about{
+        width: 100%;
+    }
+
+    .close-button,
+    .open-button{
+        display: block;
+    }
+}
