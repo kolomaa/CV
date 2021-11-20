@@ -32,15 +32,17 @@ Object.keys(obj).forEach(el => {
 });
 
 const user = document.getElementById("user");
+const openButton = document.querySelector(".open-button");
 
 function openProfile() {
     user.style.display = "block";
     user.style.width = "100%";
-    document.querySelector(".open-button").style.display = "none";
+    openButton.style.display = "none";
 
 }
 
 function closeProfile() {
     user.style.display = "none";
+    openButton.style.display = "block";
 }
 
