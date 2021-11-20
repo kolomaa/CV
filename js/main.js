@@ -31,12 +31,16 @@ Object.keys(obj).forEach(el => {
     body.addEventListener('load', move(el, obj[el]));
 });
 
+const user = document.getElementById("user");
 
 function openProfile() {
-    document.getElementById("user").style.display = "block";
+    user.style.display = "block";
+    user.style.width = "100%";
+    document.querySelector(".open-button").style.display = "none";
+
 }
 
 function closeProfile() {
-    document.getElementById("user").style.display = "none";
+    user.style.display = "none";
 }
 
