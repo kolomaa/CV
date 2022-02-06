@@ -44,6 +44,6 @@ function openProfile() {
 function closeProfile() {
     user.style.display = "none";
     openButton.style.display = "block";
-    console.log("it's a branch storage")
+    console.log("it's a branch feature")
 }
 
